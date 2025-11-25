@@ -1,0 +1,38 @@
+/* MODO CLARO */
+body {
+    background-color: white;
+}
+
+/* MODO OSCURO */
+.dark body {
+    background-color: black;
+}
+
+:root {
+    --morado: blueviolet;
+}
+
+article {
+    background: transparent !important;
+}
+
+* {
+    transition: all 1s ease;
+}
+
+label {
+    font-weight: 800 !important; /* Extra bold */ 
+}
+
+/* Animación pulso suave para el título */
+@keyframes pulse-suave {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.05); opacity: 0.95; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.pulse-suave {
+    animation: pulse-suave 2s ease-in-out infinite;
+}
+
+/* (TODO lo demás se queda igual porque no afecta el login nuevo) */
