@@ -16,11 +16,11 @@ async function login() {
         return;
     }
 
-    const { data, error } = await supabase
-        .from("usuario")
-        .select("*")
-        .eq("Correo", correo)
-        .single();
+   const { data, error } = await window.supabase
+    .from("usuario")
+    .select("*")
+    .eq("Correo", correo)
+    .single();
 
     if (error || !data) {
         alert("Correo no encontrado.");
@@ -36,3 +36,4 @@ async function login() {
     alert("Bienvenido " + data.correo);
     window.location.href = "Menu.html"; // crea esta página
 }
+
