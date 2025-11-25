@@ -27,13 +27,14 @@ async function login() {
         return;
     }
 
-    if (data.password !== password) {
+    if (data.Contrasena !== password) {
         alert("Contraseña incorrecta.");
         return;
     }
 
     // Login exitoso
-    alert("Bienvenido " + data.correo);
+    alert("Bienvenido " + data.Correo);
     window.location.href = "Menu.html"; // crea esta página
 }
+
 
